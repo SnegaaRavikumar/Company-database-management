@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.header{
+  padding:5px;
+  text-align:center;
+  background:#5c7484;
+  color:white;
+  font-size:25px; 
+  }  
+.header1{
+  padding:5px;
+  text-align:center;
+  background:#4d4d4d;
+  color:white;
+  font-size:25px; 
+  }  
+ .left
+ {
+  float:center;
+  width:100px;
+  height:100px;
+ }
+.h2
+{
+  padding: 50px;
+background:black;
+}
+.h3
+{
+ padding: 10px;
+background:white;
+}
+.center
+{
+text-align:center;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#b0c2c4;
+}
+.topnav a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color:;
+  color:white;
+}
+.topnav a.active {
+  background-color:white;
+  color:white;
+}
+</style>
+<script>
+function myfunc1()
+{
+var name=reg1.username.value;
+if(name.length>1)
+{
+  alert("Please enter the admin name correctly")
+  return false;
+}
+var pass=reg1.passes.value;
+if(pass!=snegaa@10)
+{
+ alert("Please enter the password correctly")
+ return false;
+}
+}
+</script>
+</head>
+<body>
+<div style="font-family:Courier New" class="header">
+  <p><h2> SMARTCLICK ELECTRONICS</h2>
+  <h6>What makes us who we are today..</h6>
+ </div>
+ <div class="topnav">
+  <a class=>Home</a>
+  <a href="admin1.html">Administration</a>
+  <a href="login.html">Employee Details</a>
+  <a href="customer.html">Customer Registration</a>
+</div>
+<div class="h3">
+</div>
+<table>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><img src="side1.JPG" style="width:50%"></img></td>
+<td>
+<form name="reg1"action="ExServlet3" onsubmit="return myfunc1()" method="POST">
+<table >
+<tr>
+<td><b> Username:</b></td><td><input type="text" name="uname" style="width:250px; height:28px" placeholder="Enter the customer name"/></td> 
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td><b>Password:</b></td><td><input type="password" name="passes" style="width:250px; height:28px" placeholder="Enter the mobile number"/></td>
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td></td><td><button style="background-color:#5c7484 ;color:white;text-align:center;border-color:#5c7484;height:35px;width:80px" >Sign in</button></td>
+</tr>
+</table>
+</form>
+<table><tr>
+<td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><td></td><td></td><td><b>or</b></td></tr>
+<tr>
+</table>
+<table>
+<tr>
+<td></td><td><form name="reg1" action="signup.html" method="POST"><b>Are you a new employee,then</b></td><td></td><td><button style="background-color:#5c7484;color:white;text-align:center;border-color:#5c7484;height:35px;width:80px" >Sign up</button></form></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

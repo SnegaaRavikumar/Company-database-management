@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.header{
+  padding:5px;
+  text-align:center;
+  background:#333333;
+  color:white;
+  font-size:25px; 
+  }  
+ .left
+ {
+  float:left;
+  width:100px;
+  height:100px;
+ }
+.h2
+{
+  padding: 50px;
+background:black;
+}
+.h3
+{
+ padding: 10px;
+background:white
+}
+.topnav {
+  overflow: hidden;
+  background-color:#404040;
+}
+.topnav a {
+  float: left;
+  color:#ff3300;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color:;
+  color:grey;
+}
+.topnav a.active {
+  background-color:grey;
+  color:grey;
+}
+.center
+{
+text-align:center;
+}
+</style>
+<script>
+function myfunc1()
+{
+var name=reg1.username.value;
+if(name.length>1)
+{
+  alert("Please enter the admin name correctly")
+  return false;
+}
+var pass=reg1.passes.value;
+if(pass!=snegaa@10)
+{
+ alert("Please enter the password correctly")
+ return false;
+}
+}
+</script>
+</head>
+<body>
+<div style="font-family:Courier New" class="header">
+  <p><h2> SMARTCLICK ELETRONICS</h2>
+  <h6>What makes us who we are today..</h6>
+ </div>
+<div class="topnav">
+  <a class=>Home</a>
+  <a href="admin.html">Administration</a>
+  <a href="login.html">Employee Details</a>
+  <a href="customer.html">Customer Registration</a>
+</div>
+<div class="h3">
+</div>
+<form name="reg1"action="custemp.html" onsubmit="return myfunc()" method="POST">
+<p><img src="back.jpg" style="width:40%"></img>
+<table class="left">
+<tr><td>
+<p><img src="back.jpg" style="width:40%"></img>
+</td><td><table >
+<tr>
+<td><b> Admin : </b></td><td><input type="text" name="username" style="width:250px; height:28px" placeholder="Enter your name"/></td> 
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td><b>Password:</b></td><td><input type="password" name="passes" style="width:250px; height:28px" placeholder="Enter your password"/></td>
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td></td><td><button style="background-color:#A3E4D7 ;color:black;text-align:right;border-color:green;height:20px;width=30px" >Log in</button></td>
+</table>
+</td></tr>
+</table>
+</form>
+</body>
+</html>

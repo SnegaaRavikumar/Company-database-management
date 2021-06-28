@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.header{
+  padding:5px;
+  text-align:center;
+  background:#5c7484;
+  color:white;
+  font-size:25px; 
+  }  
+.header1{
+  padding:5px;
+  text-align:center;
+  background:#4d4d4d;
+  color:white;
+  font-size:25px; 
+  }  
+ .left
+ {
+  float:right;
+  width:100px;
+  height:100px;
+ }
+.h3
+{
+ padding: 10px;
+background:white;
+}
+.center
+{
+text-align:center;
+
+</style>
+</head>
+<body>
+<script>
+function myfunc()
+{
+var p1=reg.pass.value;
+var p2=reg.pass1.value;
+if(p1!=p2)
+{
+  alert("please provide confirm password correctly")
+  return false;
+}
+}
+</script>
+<div style="font-family:Courier New" class="header">
+  <p><h2> SMARTCLICK ELECTRONICS</h2>
+  <h6>What makes us who we are today..</h6>
+ </div>
+<div class="h3">
+</div>
+<form name="reg" onsubmit="return myfunc()" action="employee.html" method="POST">
+<table>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+<td><p><img src="side1.JPG" style="width:60%"></img></p></td>
+<td>
+<table >
+<tr>
+<td><b>User Name :</b></td><td><input type="text" id="uname"  style="width:250px; height:28px" placeholder="Enter your name" ></td> 
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td><b>Create your Password:</b></td><td><input type="password" name="pass" style="width:250px; height:28px" placeholder="Enter your own password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain atleast one number,one uppercase and atleast 8 characters or more"></td>
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td><b>Confirm Password:</b></td><td><input type="password" name="pass1" style="width:250px; height:28px" placeholder="Enter confirm password" ></td>
+</tr><tr/><tr/><tr/><tr/><tr/><tr/><tr/><tr/>
+<tr>
+<td></td><td><button style="background-color:#5c7484;color:black;text-align:right;border-color:#5c7484;height:20px;width=60px" onclick="return myfunc()">Sign up</button></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</form>
+</body>
+</html>
